@@ -1,0 +1,129 @@
+/* Custom CSS copied from login page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/static/image.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px);
+  z-index: -1;
+}
+
+
+.container {
+  max-width: 700px !important;
+  margin: 50px auto;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative; /* Ensure container is positioned relative to body */
+  z-index: 1; /* Set higher z-index to make container appear above background */
+}
+
+.home {
+  text-decoration: none !important;
+  margin-left: 20px !important;
+  font-size: 40px;
+  padding: 15px 100px 30px 80px; /* Adjust padding as needed */
+  background-image: url("/static/logo/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  display: inline-block;
+}
+
+.navbar {
+  background-color: rgb(211, 209, 209);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.navbar a.active {
+  color: white;
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.navbar-left a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+
+.navbar-right {
+  display: flex;
+  
+}
+
+.navbar-right a {
+  color: black !important;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.navbar-right a:hover {
+  /* background-color: #ddd; */
+  color: black;
+}
+
+
+
+
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  text-align: center;
+}
+
+.form-label {
+  margin-bottom: 0;
+  margin-top: 0.4rem;
+}
+
+.form-control {
+  width: 100%;
+  margin-left: 3rem !important;
+  margin-right: auto;
+}
+
+.mb-3,
+.mt-3,
+.mt-4 {
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #888;
+}
